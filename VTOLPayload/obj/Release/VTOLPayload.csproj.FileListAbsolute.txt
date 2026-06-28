@@ -1,0 +1,10 @@
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.csproj.AssemblyReference.cache
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.AssemblyInfoInputs.cache
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.AssemblyInfo.cs
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.csproj.CoreCompileInputs.cache
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\bin\Release\VTOLPayload.deps.json
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\bin\Release\VTOLPayload.dll
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\bin\Release\VTOLPayload.pdb
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.dll
+C:\Users\tymek\Dev\VTOLTrainer\VTOLPayload\obj\Release\VTOLPayload.pdb

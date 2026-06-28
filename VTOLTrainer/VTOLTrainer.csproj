@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>VTOLTrainer</AssemblyName>
+    <RootNamespace>VTOLTrainer</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <GameDir>D:\SteamLibrary\steamapps\common\VTOL VR</GameDir>
+    <BepInExDir>$(GameDir)\BepInEx</BepInExDir>
+    <ManagedDir>$(GameDir)\VTOLVR_Data\Managed</ManagedDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExDir)\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(ManagedDir)\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>$(ManagedDir)\Unity.InputSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="DeployToBepInEx" AfterTargets="Build">
+    <MakeDir Directories="$(BepInExDir)\plugins\$(AssemblyName)" />
+    <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(BepInExDir)\plugins\$(AssemblyName)" />
+    <Message Text="Deployed shim $(AssemblyName).dll" Importance="high" />
+  </Target>
+
+</Project>
